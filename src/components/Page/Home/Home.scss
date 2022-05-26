@@ -1,0 +1,13 @@
+@import '../../../scss/color.scss';
+
+.Home {
+    height: 100%;
+    background: $secondary;
+
+    .page-bloc {
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

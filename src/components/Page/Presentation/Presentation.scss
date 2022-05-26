@@ -1,0 +1,13 @@
+@import '../../../scss/color.scss';
+
+.Presentation {
+    color: $white;
+
+    h5 {
+        font-size: 17px;
+    }
+
+    h1, h5, .description {
+        margin: 0.5rem!important;
+    }
+}

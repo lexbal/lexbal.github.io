@@ -1,0 +1,15 @@
+@import '../../../scss/color.scss';
+
+.Header {
+    .Navbar {
+        background: $primary!important;
+        font-size: 17px;
+        position: fixed;
+
+        .Brand {
+            span:first-child {
+                color: $green;
+            }
+        }
+    }
+}

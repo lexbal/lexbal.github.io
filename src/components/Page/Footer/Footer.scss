@@ -1,0 +1,82 @@
+@import '../../../scss/color.scss';
+
+.Footer {
+    background-color: $primary;
+    padding: 1rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $white;
+
+    a.logo {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $white;
+
+        span:first-child {
+            color: $green;
+        }
+    }
+
+    p {
+        letter-spacing: 0.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        svg.react {
+            width: 2rem;
+            animation: rotate 2s linear infinite;
+            color: #61dafb;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    
+        img, span {
+            font-size: 3rem;
+            width: 3rem;
+        }
+
+        .linkedIn {
+            color: #0a66c2;
+        }
+
+        .instagram {
+            color: #833AB4;
+        }
+
+        .github {
+            color: #4078c0;
+        }
+
+        .discord {
+            color: rgb(218, 218, 218);
+        }
+    }
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @media (max-width: 800px) {
+        padding: 4rem 10rem;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+      
+    @media (max-width: 600px) {
+        padding: 4rem 1rem;
+        
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
