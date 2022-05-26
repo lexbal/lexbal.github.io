@@ -1,0 +1,22 @@
+@import '../../../scss/color.scss';
+
+.Presentation {
+    background: $main;
+    color: $font;
+
+    h5 {
+        font-size: 17px;
+    }
+
+    h1, h5, .description {
+        margin: 0.5rem!important;
+    }
+
+    .social-media {
+        padding: 2rem;
+
+        svg {
+            color: $icon;
+        }
+    }
+}
