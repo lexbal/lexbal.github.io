@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://lexbal.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -29,11 +30,14 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.1",
-    "@types/react-animate-on-scroll": "^2.1.5"
+    "@types/react-animate-on-scroll": "^2.1.5",
+    "gh-pages": "^4.0.0"
   },
   "scripts": {
     "start": "react-dotenv && react-scripts start",
     "build": "react-dotenv && react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "serve": "react-dotenv && serve build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -57,6 +61,9 @@
     ]
   },
   "react-dotenv": {
-    "whitelist": ["TEL", "EMAIL"]
+    "whitelist": [
+      "TEL",
+      "EMAIL"
+    ]
   }
 }
