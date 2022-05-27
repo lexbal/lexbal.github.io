@@ -1,22 +1,54 @@
 @import '../../../scss/color.scss';
 
 .Presentation {
-    background: $main;
-    color: $font;
+    color: $white;
+    text-align: left;
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row!important;
+    gap: 8rem;
 
-    h5 {
-        font-size: 17px;
+    .text-left {
+        & > p {
+            color: $white;
+            font-size: 1.8rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: $green;
+            margin: 0;
+        }
+        
+        p.small-resume {
+            margin-bottom: 5rem;
+        }
     }
 
-    h1, h5, .description {
-        margin: 0.5rem!important;
+    .image-right {
+        img {
+            max-width: 500px;
+        }
     }
 
-    .social-media {
-        padding: 2rem;
+    @media (max-width: 960px) {
+        display: block;
+        margin-top: 15%;
 
-        svg {
-            color: $icon;
+        .text-left {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+        
+        .image-right {
+            display: none;
         }
     }
 }

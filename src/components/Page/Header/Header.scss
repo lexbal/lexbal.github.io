@@ -2,7 +2,15 @@
 
 .Header {
     .Navbar {
-        background: $midHot!important;
+        background: $primary!important;
+        font-size: 17px;
         position: fixed;
+        z-index: 999;
+
+        .Brand {
+            span:first-child {
+                color: $green;
+            }
+        }
     }
 }

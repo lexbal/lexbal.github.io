@@ -1,22 +1,37 @@
 import React, { FC } from 'react';
-import SocialMedia from '../../Common/SocialMedia/SocialMedia';
-import { faGitAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { FormattedMessage } from 'react-intl';
+import unDrawImage from '../../../assets/undraw_developer_activity_re_39tg.svg';
+import Button from '../../Common/Button/Button';
 import './Presentation.scss';
 
 interface PresentationProps {}
 
 const Presentation: FC<PresentationProps> = () => (
-  <div className="Presentation page-bloc fade-in" data-testid="Presentation">
-    <h5>Bonjour, je m'appelle Alexandre 👋</h5>
-    <h1>Fullstack Developer</h1>
-    <div className="description">
-      J'aime construire des applications web et mobile.
-    </div>
-    <div className="social-media">
-      <SocialMedia icon={faGitAlt} href="https://github.com/lexbal" />
-      <SocialMedia icon={faLinkedinIn} href="https://www.linkedin.com/in/alexandre-balle-199b36161/?originalSubdomain=fr" />
-    </div>
-  </div>
+  <section className="Presentation page-bloc" id="Presentation" data-testid="Presentation">
+    <div className="text-left">
+        <ScrollAnimation animateIn="fadeInUp">
+          <p><FormattedMessage id="hello" /></p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.2*1000}>
+          <h1><FormattedMessage id="name" /></h1>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
+          <h3><FormattedMessage id="job" /></h3>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
+          <p className="small-resume"><FormattedMessage id="description" /></p>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
+          <Button type="custom" href="#Contact"><FormattedMessage id="contact_me" /></Button>
+        </ScrollAnimation>
+      </div>
+      <div className="image-right">
+        <ScrollAnimation animateIn="fadeInRight" delay={1*1000}>
+          <img src={unDrawImage} alt="unDrawImage"/>
+        </ScrollAnimation>
+      </div>
+  </section>
 );
 
 export default Presentation;

@@ -5,7 +5,7 @@ import Input from './Input';
 
 describe('<Input />', () => {
   test('it should mount', () => {
-    render(<Input type="text" />);
+    render(<Input type="text" name='name' placeholder='placeholder' />);
     
     const input = screen.getByTestId('Input');
 

@@ -5,7 +5,8 @@ import Form from './Form';
 
 describe('<Form />', () => {
   test('it should mount', () => {
-    render(<Form>Test</Form>);
+    const handleSubmit = () => {};
+    render(<Form handleSubmit={handleSubmit}>Test</Form>);
     
     const form = screen.getByTestId('Form');
 

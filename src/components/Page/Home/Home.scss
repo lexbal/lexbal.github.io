@@ -1,5 +1,9 @@
+@import '../../../scss/color.scss';
+
 .Home {
     height: 100%;
+    background: $secondary;
+    padding: 0 5rem;
 
     .page-bloc {
         height: 100vh;

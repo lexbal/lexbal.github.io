@@ -2,7 +2,7 @@
 import Footer from './Footer';
 
 export default {
-  title: "Page/Footer",
+  title: "Footer",
 };
 
 export const Default = () => <Footer />;

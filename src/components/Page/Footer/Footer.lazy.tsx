@@ -1,10 +1,10 @@
 import React, { lazy, Suspense } from 'react';
 
-const LazyPage = lazy(() => import('./Footer'));
+const LazyFooter = lazy(() => import('./Footer'));
 
 const Footer = (props: JSX.IntrinsicAttributes & { children?: React.ReactNode; }) => (
   <Suspense fallback={null}>
-    <LazyPage {...props} />
+    <LazyFooter {...props} />
   </Suspense>
 );
 
