@@ -1,0 +1,19 @@
+{
+    "hello": "Hello, my name is",
+    "name": "Balle Alexandre",
+    "job": "Fullstack Developer",
+    "description": "I'd like to build web and mobile applications.",
+    "contact_me": "Contact me",
+    "presentation": "Presentation",
+    "projects": "Projects",
+    "contact": "Contact",
+    "short.firstname": "Lex",
+    "short.lastname": "Bal",
+    "my_projects": "My projects",
+    "and_more": "and more",
+    "realised_with": "This website has been realised with",
+    "your_email": "Your email :",
+    "your_message": "Your message :",
+    "send": "Send",
+    "contact_info": "If you have any questions to ask me, send your message."
+}

@@ -19,7 +19,7 @@ const Project: FC<ProjectProps> = () => (
         </div>
       </header>
       <div className="body">
-        <h3>Project</h3>
+        <h5>Project</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ligula nibh, <a href="https://www.goggle.com/">tempus</a> in tincidunt eget, faucibus sed lectus.
         </p>
       </div>

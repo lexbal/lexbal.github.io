@@ -2,18 +2,19 @@ import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faLinkedin, faGithub, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import './Footer.scss';
+import { FormattedMessage } from 'react-intl';
 
 interface FooterProps {}
 
 const Footer: FC<FooterProps> = () => (
   <div className="Footer" data-testid="Footer">
     <a href="/" className="logo">
-      <span>Lex</span>
-      <span>Bal</span>
+      <span><FormattedMessage id="short.firstname" /></span>
+      <span><FormattedMessage id="short.lastname" /></span>
     </a>
     <div>
       <p>
-        Ce site a été réalisé avec <FontAwesomeIcon icon={faReact} className="react" /> et plus
+        <FormattedMessage id="realised_with" /> <FontAwesomeIcon icon={faReact} className="react" /> <FormattedMessage id="and_more" />
       </p>
     </div>
 
