@@ -15,9 +15,7 @@ function App() {
       <Router>
         <Header />
         <Container>
-          <Routes>
-            <Route path="/" element={<Home />}/>
-          </Routes>
+          <Home />
         </Container>
         <Footer />
       </Router>
