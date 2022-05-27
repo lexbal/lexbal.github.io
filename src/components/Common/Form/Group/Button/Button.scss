@@ -1,0 +1,26 @@
+@import '../../../../../scss/color.scss';
+
+.Button {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: $green;
+    color: $white;
+    border-radius: 2rem;
+    font-weight: 500;
+    transition: filter 0.25s ease 0s;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+
+.primary {
+    background-color: #007bff;
+}
+
+.custom {
+    background-color: $green;
+}
