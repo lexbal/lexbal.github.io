@@ -19,7 +19,7 @@ const Footer: FC<FooterProps> = () => (
     </div>
 
     <div className="social-media">
-      <a href="https://www.linkedin.com/in/#" target="_blank" rel="noreferrer" className='linkedIn'>
+      <a href="https://www.linkedin.com/in/alexandre-balle-199b36161/" target="_blank" rel="noreferrer" className='linkedIn'>
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
       </a>
 
@@ -31,7 +31,7 @@ const Footer: FC<FooterProps> = () => (
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>
 
-      <a href="https://discord.com/users/#" target="_blank" rel="noreferrer" className='discord'>
+      <a href="https://discord.com/users/214839509320204290" target="_blank" rel="noreferrer" className='discord'>
         <FontAwesomeIcon icon={faDiscord} size="2x" />
       </a>
     </div>

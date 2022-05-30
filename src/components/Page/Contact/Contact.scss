@@ -48,4 +48,9 @@
             width: 90%;
         }
     }
+
+    @media (max-width: 960px) {
+        height: initial!important;
+        padding-bottom: 2rem;
+    }
 }
