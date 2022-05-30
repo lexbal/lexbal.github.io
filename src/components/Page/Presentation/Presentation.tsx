@@ -3,6 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { FormattedMessage } from 'react-intl';
 import unDrawImage from '../../../assets/undraw_developer_activity_re_39tg.svg';
 import Button from '../../Common/Button/Button';
+import { Link } from "react-scroll";
 import './Presentation.scss';
 
 interface PresentationProps {}
@@ -23,7 +24,16 @@ const Presentation: FC<PresentationProps> = () => (
           <p className="small-resume"><FormattedMessage id="description" /></p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <Button type="custom" href="#Contact"><FormattedMessage id="contact_me" /></Button>
+          <Link
+              activeClass="active"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+          >
+            <Button type="custom" href="#Contact"><FormattedMessage id="contact_me" /></Button>
+          </Link>
         </ScrollAnimation>
       </div>
       <div className="image-right">
