@@ -17,5 +17,9 @@
         gap: 2rem;
         padding: 1rem;
         overflow: hidden;
+
+        @media (max-width: 800px) {
+            overflow: scroll;
+        }
     }
 }
