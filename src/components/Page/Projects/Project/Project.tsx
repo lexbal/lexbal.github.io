@@ -5,30 +5,41 @@ import { faFolder } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-interface ProjectProps {}
+interface ProjectProps {
+  name: string, 
+  links: Array<any>, 
+  description: string, 
+  techList: Array<any>
+}
 
-const Project: FC<ProjectProps> = () => (
+const Project: FC<ProjectProps> = ({ name, links, description, techList }) => (
   <ScrollAnimation animateIn="flipInX">
     <div className="Project">
       <header>
         <FontAwesomeIcon icon={faFolder} size="3x" />
         <div className="project-links">
-          <a href="https://github.com/lexbal" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </a>
+          {
+            links.map(({value}, i) =>
+              <a href={value} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            )
+          }
         </div>
       </header>
       <div className="body">
-        <h5>Project</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ligula nibh, <a href="https://www.goggle.com/">tempus</a> in tincidunt eget, faucibus sed lectus.
-        </p>
+        <h5>{name}</h5>
+        <p>{description}</p>
       </div>
       <footer>
         <ul className="tech-list">
-          <li>Node</li>
-          <li>Express</li>
-          <li>MySql</li>
-          <li>Ejs</li>
+          {
+            techList.map(({name}, i) =>
+              <li key={i}>
+                {name}
+              </li>
+            )
+          }
         </ul>
       </footer>
     </div>
